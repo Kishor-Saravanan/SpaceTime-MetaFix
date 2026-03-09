@@ -1,0 +1,140 @@
+================================================================================
+                   SPACETIME METAFIX - UPLOAD TO GITHUB
+================================================================================
+
+STEP 1: CREATE GITHUB REPOSITORY
+---------------------------------
+1. Go to: https://github.com/new
+2. Repository name: SpaceTime-MetaFix
+3. Description: GPS Metadata Management Tool for Android
+4. Visibility: Public (or Private if preferred)
+5. DO NOT initialize with README
+6. Click "Create repository"
+
+
+STEP 2: OPEN GIT BASH
+----------------------
+1. Open Git Bash (or Terminal on Mac/Linux)
+2. Navigate to your project folder:
+   
+   cd /path/to/SpaceTime-MetaFix
+
+
+STEP 3: RUN THESE COMMANDS (Copy and paste)
+--------------------------------------------
+
+git init
+
+git add .
+
+git commit -m "Initial commit: SpaceTime MetaFix v1.0 - GPS metadata management tool"
+
+git remote add origin https://github.com/Kishor-Saravanan/SpaceTime-MetaFix.git
+
+git branch -M main
+
+git push -u origin main
+
+
+STEP 4: VERIFY UPLOAD
+----------------------
+1. Go to: https://github.com/Kishor-Saravanan/SpaceTime-MetaFix
+2. Check that all files are uploaded
+3. Go to "Actions" tab
+4. You should see "Build APK" workflow running
+
+
+STEP 5: DOWNLOAD APK (Wait 3-5 minutes for build)
+--------------------------------------------------
+
+Option A - From Actions:
+  1. Click "Actions" tab
+  2. Click the latest workflow run
+  3. Scroll to "Artifacts"
+  4. Download "app-debug.apk"
+
+Option B - From Releases:
+  1. Click "Releases" (right sidebar)
+  2. Click latest release
+  3. Download "app-debug.apk"
+
+
+STEP 6: INSTALL APK ON ANDROID
+-------------------------------
+1. Transfer app-debug.apk to your Android device
+2. Open the APK file
+3. If prompted, allow "Install from Unknown Sources"
+4. Click Install
+5. Open app
+6. Grant storage permissions when prompted
+
+
+TROUBLESHOOTING
+---------------
+
+If workflow fails with "Permission denied":
+  chmod +x gradlew
+  git add gradlew
+  git commit -m "Fix gradlew permissions"
+  git push
+
+If you need to update files later:
+  git add .
+  git commit -m "Update description here"
+  git push
+
+
+WHAT'S INCLUDED
+---------------
+✓ 12 Kotlin source files (~1,500 lines)
+✓ Complete Android UI with Material Design 3
+✓ GitHub Actions for automatic APK building
+✓ 4 comprehensive documentation files
+✓ All required features implemented
+✓ Ready for immediate use
+
+
+FEATURES
+--------
+✓ Scan multiple folders for photos/videos
+✓ Extract GPS and metadata from all files
+✓ Create CSV database with all metadata
+✓ Separate files without GPS
+✓ AutoTag: Match timestamps to add GPS
+✓ Configurable time window (±5 to ±60 min)
+✓ Safe: Only modifies GPS coordinates
+
+
+SUPPORTED FILES
+---------------
+Photos: jpg, jpeg, png, heic
+Videos: mp4, mov, m4v
+
+
+NEXT STEPS AFTER UPLOAD
+------------------------
+1. ✓ Verify files uploaded to GitHub
+2. ✓ Wait for Actions to build APK
+3. ✓ Download APK
+4. ✓ Install on Android device
+5. ✓ Grant storage permissions
+6. ✓ Start managing your GPS metadata!
+
+
+SUPPORT
+-------
+For issues: https://github.com/Kishor-Saravanan/SpaceTime-MetaFix/issues
+Documentation: See README.md, SETUP_GUIDE.md, QUICK_START.md
+
+
+================================================================================
+                        PROJECT STATUS: ✅ COMPLETE
+================================================================================
+
+Created: March 6, 2026
+Version: 1.0
+Author: Kishor Saravanan
+
+Everything is ready! Just follow the steps above to upload and deploy.
+
+================================================================================

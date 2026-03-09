@@ -1,0 +1,94 @@
+================================================================================
+                      HOW TO EXTRACT THE PROJECT
+================================================================================
+
+You have downloaded either:
+  • SpaceTime-MetaFix.zip (Windows/Mac/Linux)
+  • SpaceTime-MetaFix.tar.gz (Linux/Mac)
+
+WINDOWS:
+--------
+1. Right-click on SpaceTime-MetaFix.zip
+2. Select "Extract All..."
+3. Choose destination folder
+4. Click "Extract"
+
+MAC:
+----
+1. Double-click SpaceTime-MetaFix.zip
+   OR
+2. Double-click SpaceTime-MetaFix.tar.gz
+   (will extract automatically)
+
+LINUX:
+------
+For ZIP:
+  unzip SpaceTime-MetaFix.zip
+
+For TAR.GZ:
+  tar -xzf SpaceTime-MetaFix.tar.gz
+
+================================================================================
+AFTER EXTRACTION
+================================================================================
+
+You will have a folder named "SpaceTime-MetaFix" containing:
+
+SpaceTime-MetaFix/
+├── .github/workflows/build-apk.yml    ← GitHub Actions
+├── app/
+│   ├── build.gradle                   ← App configuration
+│   ├── proguard-rules.pro
+│   └── src/main/
+│       ├── AndroidManifest.xml
+│       ├── java/com/kishor/gpstools/  ← 12 Kotlin source files
+│       └── res/                        ← UI layouts & resources
+├── gradle/                             ← Gradle wrapper
+├── build.gradle                        ← Project configuration
+├── settings.gradle
+├── gradlew                             ← Build script (Unix)
+├── gradlew.bat                         ← Build script (Windows)
+├── README.md                           ← Main documentation
+├── SETUP_GUIDE.md                      ← Setup instructions
+├── QUICK_START.md                      ← Quick start guide
+├── UPLOAD_INSTRUCTIONS.txt             ← Git commands
+└── FINAL_SUMMARY.txt                   ← Project overview
+
+================================================================================
+WHAT TO DO NEXT
+================================================================================
+
+1. READ: Open UPLOAD_INSTRUCTIONS.txt
+2. FOLLOW: The Git Bash commands to upload to GitHub
+3. WAIT: For GitHub Actions to build the APK (3-5 minutes)
+4. DOWNLOAD: The app-debug.apk from GitHub Actions
+5. INSTALL: On your Android device
+6. USE: Start managing GPS metadata!
+
+================================================================================
+QUICK UPLOAD TO GITHUB
+================================================================================
+
+# Navigate to the extracted folder
+cd SpaceTime-MetaFix
+
+# Run these commands in Git Bash
+git init
+git add .
+git commit -m "Initial commit: SpaceTime MetaFix v1.0"
+git remote add origin https://github.com/Kishor-Saravanan/SpaceTime-MetaFix.git
+git branch -M main
+git push -u origin main
+
+That's it! GitHub Actions will automatically build your APK.
+
+================================================================================
+NEED HELP?
+================================================================================
+
+• Full documentation: README.md
+• Setup guide: SETUP_GUIDE.md  
+• Quick start: QUICK_START.md
+• Project details: FINAL_SUMMARY.txt
+
+================================================================================
